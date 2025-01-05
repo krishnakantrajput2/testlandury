@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(166, 196, 121, 0.603);
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack the signup container and image */
+}
+
+.Signup-container {
+  width: 100%;
+  max-width: 460px; /* Limit the max width */
+  height: auto;
+  padding-right:446px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.img-container {
+  width: 460px;
+  height: 446px;
+  width: 460px;
+  height: 446px;
+  margin-left: 741px;
+  margin-top: -483px;
+}
+
+.washing-img {
+  width: 460px;
+  height: 446px;
+  mix-blend-mode: multiply;
+}
+
+.Register {
+  font-size: 30px;
+  color: rgb(31, 73, 129);
+}
+
+.input {
+  padding-top: 20px;
+}
+
+.info {
+  border-color: rgb(31, 73, 129);
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.button {
+  font-size: 18px;
+  padding: 10px 167px;
+  border-radius: 8px;
+  background-color: rgb(31, 73, 129);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(41, 86, 153);
+}
+
+.Customer {
+  padding-left: 8px;
+  font-size: 14px;
+}
+
+.a {
+  text-decoration: none;
+  color: rgb(31, 73, 129);
+}
+
+@media only screen and (max-width: 768px) {
+  /* Hide the image container on mobile */
+  .img-container {
+    display: none;
+  }
+
+  .washing-img {
+    display: none;
+  }
+
+  .main-container {
+    height: auto; /* Allow height to adjust */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Signup-container {
+    width: 90%;
+    max-width: 460px; /* Maintain max width */
+    padding-right: 9px;;
+  }
+
+  .Register {
+    font-size: 28px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .input {
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .info {
+    font-size: 16px; /* Adjust font size for mobile */
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    width: 83%;
+    padding: 10px;
+    font-size: 28px;
+    background-color: rgb(31, 73, 129);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .Customer {
+    text-align: center;
+    font-size: 14px;
+  }
+}

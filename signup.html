@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="Signup-container">
+      <form>
+        <h1 class="Register">Register Now</h1>
+        <section class="input">
+          <input class="info" type="text" placeholder="Enter Your Name" required><br><br>
+          <input class="info" type="email" placeholder="Enter Email"><br><br>
+          <input class="info" type="password" placeholder="Create Password" id="password"><br><br>
+          <input class="info" type="password" placeholder="Confirm Password" id="confirmPassword"><br><br>
+          <input type="checkbox" onclick="togglePasswordVisibility()"> Show Password<br><br>
+          <button class="button" type="submit">Register</button><br>
+          <h4 class="Customer">Already a Customer? <a href="login.html">Login Now</a></h4>
+        </section>
+      </form>
+    </div>
+    <div class="img-container">
+      <img src="./img/washing.jpeg" class="washing-img" alt="Washing Machine">
+    </div>
+  </div>
+
+  <script>
+    function togglePasswordVisibility() {
+      const passwordField = document.getElementById("password");
+      const confirmPasswordField = document.getElementById("confirmPassword");
+      const fields = [passwordField, confirmPasswordField];
+      
+      fields.forEach(field => {
+        if (field.type === "password") {
+          field.type = "text";
+        } else {
+          field.type = "password";
+        }
+      });
+    }
+  </script>
+</body>
+</html>
